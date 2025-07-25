@@ -1,0 +1,61 @@
+.experienceContainer {
+  width: 100%;
+}
+
+.experienceParts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.experienceParts:hover {
+  background-color: #17274b84;
+  color: #53d1d4;
+  background-color: rgba(255, 255, 255, 0.071);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  
+}
+
+.experienceParts > p {
+  min-width: 100px;
+  font-weight: bold;
+  margin: 0;
+}
+.experienceSubPart h2{
+  margin: 0;
+}
+
+.experienceSubPart {
+  width: 80%;
+}
+
+.experienceSubPart h2 {
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+}
+
+.experienceSubPart p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #8d99b0;
+}
+
+.experienceSubPart2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  text-align: start;
+}
+
+.experienceSubPart2 p {
+  background-color: #193757;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50px;
+  color: #dfe5f4;
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  margin: 0px; 
+}

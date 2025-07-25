@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+body {
+  color: #dfe5f4;
+  font-family: sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: clamp(0.3rem, 1.3vw, 1.3rem);
+  color: #8d99b0;
+  line-height: clamp(1.2, 2.5vw, 2);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span {
+  color: #dfe5f4;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
+  display: none;
+}
+.mainContainer {
+  box-sizing: border-box;
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 39);
   display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  padding: 80px;
+}
+.headerContainer {
+  box-sizing: border-box;
+  max-width: 40%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
+}
+.headerContainer h1 {
+  font-size: clamp(1.5rem, 4vw, 5rem);
+  margin: 10px 0px;
+}
+.headerContainer h3 {
+  font-size: clamp(0.8rem, 3vw, 2rem);
+  margin: 10px 0px;
+}
+.headerContainer p {
+  width: 90%;
+}
+.headerIcons {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.headerIcons a {
+  box-sizing: border-box;
+  color: #8392b1;
+  font-size: clamp(0.3rem, 3vw, 2.5rem);
+}
+.headerIcons a:hover{
+  color: aqua;
+  transition: all 0.5s ease-in-out;
+}
+.sideContainer {
+  box-sizing: border-box;
+  max-width: 55%;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: grid;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+.navBar {
+  width: 50%;
+}
+.navBar p{
+  margin: 0;
+}
+.navBar p:hover{
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+  color: aqua;
+}
+.navBar a {
+  display: flex;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.navBar hr {
+  width: 30px;
+  margin: 15px 3px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1448px) {
+  .mainContainer {
+    padding: 30px 20px 30px 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .headerContainer,
+  .sideContainer {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .headerIcons {
+    width: 40%;
+  }
+}
+@media (max-width: 650px) {
+  .mainContainer {
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+  }
+  .heading{
+    display: block;
+    font-size: clamp(1.5rem, 4vw, 5rem);
+  }
+  p {
+    font-size: clamp(0.3rem, 2vw, 1.3rem);
+  }
+  .sideContainer {
+    row-gap: 2rem;
+  }
+  .navBar{
+    display: none;
   }
 }

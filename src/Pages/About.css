@@ -1,0 +1,22 @@
+.aboutPara {
+  padding: 0 2rem;
+  line-height: clamp(1.4, 2.5vw, 2);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  max-width: 100%;
+}
+
+.aboutPara p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.aboutPara span {
+  color: #dfe5f4;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .aboutPara {
+    padding: 0 1rem;
+  }
+}
