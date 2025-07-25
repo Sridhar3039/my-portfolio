@@ -9,7 +9,7 @@ function Certification() {
         <p>Oct 24 - May 25</p>
         <div className="certificationSubPart">
           <h2>Full Stack Developer</h2>
-          <h3>Pentagon Space, Vijayanagar</h3>
+          <h4>Pentagon Space, Vijayanagar</h4>
           <p>
             I completed a Java Full Stack Development course at Pentagon Space,
             Bangalore. It focused on hands-on training in front-end and back-end
