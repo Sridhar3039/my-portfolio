@@ -9,6 +9,8 @@
   padding: 1rem;
   border-radius: 8px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  opacity: 0;
+  animation: 1.5s fadeIn forwards 1s;
 }
 
 .educationParts:hover {
