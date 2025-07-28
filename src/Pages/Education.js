@@ -23,7 +23,7 @@ function Education() {
         <p>2018 - 2019</p>
         <div className="educationSubPart">
           <h2>10th (CBSE)</h2>
-          <h4>K.N.E TRUST RESI PU COLLEGE</h4>
+          <h4>National Public School</h4>
         </div>
       </div>
     </div>
